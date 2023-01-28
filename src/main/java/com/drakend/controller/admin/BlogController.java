@@ -15,15 +15,15 @@ import com.drakend.service.impl.BlogService;
 @Controller(value = "blogControllerAdmin")
 
 public class BlogController {
-	@Autowired
+//	@Autowired
 	private BlogService blogService;
 
 	@RequestMapping(value = "/admin-blog", method = { RequestMethod.GET })
 	public ModelAndView getBlogs(@ModelAttribute("m") BlogModel blogModel) {
 		ModelAndView modelAndView = new ModelAndView("admin/blog");
-		List<BlogModel> models= blogService.findAll();
-		blogModel.setListResult(models);
-		modelAndView.addObject("model", blogModel);
+//		List<BlogModel> models= blogService.findAll();
+//		blogModel.setListResult(models);
+//		modelAndView.addObject("model", blogModel);
 		return modelAndView;
 	}
 }
