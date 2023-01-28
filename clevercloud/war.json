@@ -4,7 +4,7 @@
       "goal": "package"
    },
    "deploy": {
-      "container": "TOMCAT9",
+      "container": "TOMCAT7",
       "war": [
          {
             "file": "target/homepage-1.0.war",
