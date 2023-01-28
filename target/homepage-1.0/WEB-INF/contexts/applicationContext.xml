@@ -14,7 +14,7 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<!-- Activates scanning of @Repository and @Service and @Component -->
-
+	<!-- để sử dụng được @autowide thì cần phai có đoạn khai báo bên dưới -->
 	<context:component-scan
 		base-package="com.drakend" />
 

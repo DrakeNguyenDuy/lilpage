@@ -23,16 +23,18 @@
 
 	<context:component-scan
 		base-package="com.drakend.controller.web" />
+	<context:component-scan
+		base-package="com.drakend.controller.admin" />
 
 	<mvc:annotation-driven /> <!-- allow using annotation of spring liked @Controller, @RequestMapping -->
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 
-		<property name="prefix" value="/WEB-INF/views/web/" />
-
+		<property name="prefix" value="/WEB-INF/views/" />
 		<property name="suffix" value=".jsp" />
 
 	</bean>
-	<mvc:resources location="/templates/" mapping="/templates/**"></mvc:resources>
+	<mvc:resources location="/templates/"
+		mapping="/templates/**"></mvc:resources>
 </beans>
