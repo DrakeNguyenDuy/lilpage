@@ -22,17 +22,13 @@ public class BlogEntity {
 	private String title;
 	@Column(name = "thumbnail")
 	private String thumbnail;
-	@Column(name = "shortDescription")
+	@Column(name = "shortDescription", columnDefinition = "TEXT")
 	private String shortDescription;
-	@Column(name = "content")
+	@Column(name = "content", columnDefinition = "TEXT")
 	private String content;
 
 	public Long getId() {
 		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
 	}
 
 	public String getTitle() {
