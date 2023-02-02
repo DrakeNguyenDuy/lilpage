@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "app_id": "app_a018fd6b-16ab-4e0c-aff3-f0c2182adfaa",
+      "app_id": "app_81a91f9c-4151-4aec-a637-5165e4b516f2",
       "org_id": "user_4d6c403e-f3ef-4c9b-8a8b-4c18ac3b2d02",
       "deploy_url": "https://github.com/DrakeNguyenDuy/lilpage.git",
       "name": "lilpage",
