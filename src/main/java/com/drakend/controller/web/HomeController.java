@@ -9,8 +9,12 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeController {
 	@RequestMapping(value = { "/home" }, method = { RequestMethod.GET })
 	public ModelAndView homePage() {
-		System.out.println("co do day khogn");
 		ModelAndView modelAndView = new ModelAndView("web/home");
+		return modelAndView;
+	}
+	@RequestMapping(value = { "/login" }, method = { RequestMethod.POST })
+	public ModelAndView loginPage() {
+		ModelAndView modelAndView = new ModelAndView("login");
 		return modelAndView;
 	}
 }

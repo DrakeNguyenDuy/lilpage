@@ -34,8 +34,10 @@ public class JPAConfig {
 
 	public Properties additionalProperties() {
 		Properties properties = new Properties();
-		properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
+//		properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
+//		properties.setProperty("hibernate.hbm2ddl.auto", "create");
 		// properties.setProperty("hibernate.hbm2ddl.auto", "none");
+		properties.setProperty("hibernate.hbm2ddl.auto", "update");
 		return properties;
 	}
 
@@ -43,9 +45,12 @@ public class JPAConfig {
 	public DataSource dataSource() {
 		DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
 		driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		driverManagerDataSource.setUrl("jdbc:mysql://buqblsdaddvosp3pvcix-mysql.services.clever-cloud.com/buqblsdaddvosp3pvcix");
-		driverManagerDataSource.setUsername("uexqs7ymaoybgrld");
-		driverManagerDataSource.setPassword("SU5duUVS67HJiA6wGzCj");
+//		driverManagerDataSource.setUrl("jdbc:mysql://buqblsdaddvosp3pvcix-mysql.services.clever-cloud.com/buqblsdaddvosp3pvcix");
+//		driverManagerDataSource.setUsername("uexqs7ymaoybgrld");
+//		driverManagerDataSource.setPassword("SU5duUVS67HJiA6wGzCj");
+		driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/testt");
+		driverManagerDataSource.setUsername("root");
+		driverManagerDataSource.setPassword("1234");
 		return driverManagerDataSource;
 	}
 

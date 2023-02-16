@@ -15,7 +15,7 @@ import com.drakend.service.impl.BlogService;
 @Controller(value = "blogControllerAdmin")
 
 public class BlogController {
-//	@Autowired
+	@Autowired
 	private BlogService blogService;
 
 	@RequestMapping(value = "/admin-blog", method = { RequestMethod.GET })
