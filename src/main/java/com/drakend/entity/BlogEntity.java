@@ -11,12 +11,7 @@ import javax.persistence.Table;
 @Entity
 //define this class is table
 @Table(name = "blog")
-public class BlogEntity {
-	// define this attribute is a primary key
-	@Id
-	// define this attribute is auto increment
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+public class BlogEntity extends BaseEntity {
 	// define this attribute is a column in this table
 	@Column(name = "title")
 	private String title;
@@ -26,10 +21,6 @@ public class BlogEntity {
 	private String shortDescription;
 	@Column(name = "content", columnDefinition = "TEXT")
 	private String content;
-
-	public Long getId() {
-		return id;
-	}
 
 	public String getTitle() {
 		return title;
